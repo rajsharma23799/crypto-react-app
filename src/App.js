@@ -5,11 +5,11 @@ import axios from 'axios';
 function App() {
   const [state, setstate] = React.useState();
   React.useEffect(() => {
-    axios.get('https://api.nomics.com/v1/currencies/ticker?key=1df81bf714bda84c6156c89f04e64bc9c8cb5644',{
+    axios.get('https://api.nomics.com/v1/currencies/ticker?key=1df81bf714bda84c6156c89f04e64bc9c8cb5644.',{
       method: 'GET',
       headers: {
         'Content-Type':'application/json',
-      }
+      },
     })
   .then(res=> setstate(res.data))
 
