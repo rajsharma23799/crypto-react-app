@@ -9,7 +9,6 @@ function App() {
       method: 'GET',
       headers: {
         'Content-Type':'application/json',
-        'Access-Control-Allow-Origin': '*',
       }
     })
   .then(res=> setstate(res.data))
